@@ -1,27 +1,31 @@
 # monid
 
-## Overview
-Show system and user identity details.
+Show system and user identity details from a small autonomous Rust CLI.
 
-## Location
-- Repository: `/Users/farheinheigt/Projets/system/monid`
-- User entrypoint: `/Users/farheinheigt/Projets/system/monid/bin/monid`
-- Completion file: `/Users/farheinheigt/Projets/system/monid/bin/_monid.completion.zsh`
+## Entrypoints
+
+- User command: `bin/monid`
+- Zsh completion: `bin/_monid.completion.zsh`
+- Rust source: `src/main.rs`
 
 ## Usage
-Run the command directly: `monid`.
-Generate completion script: `monid --completion zsh`.
+
+Run the command directly: `bin/monid`.
+Generate completion script: `bin/monid --completion zsh`.
 
 ## Examples
-`monid`
-`monid --completion zsh`
-`monid root`
+
+`bin/monid`
+`bin/monid --completion zsh`
+`bin/monid root`
 
 ## Requirements
+
 - Runtime wrapper: `zsh`
 - Build tool: `cargo`
 
 ## Notes
+
 - The user-facing entrypoint remains `bin/monid`.
 - The Rust source lives under `src/`.
 - The Cargo build output stays in the repository-local `target/` directory.
